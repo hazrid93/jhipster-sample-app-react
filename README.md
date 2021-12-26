@@ -49,6 +49,14 @@ Add the `help` flag on any command to see how you can use it. For example, `npm 
 
 The `npm run` command will list all of the scripts available to run for this project.
 
+### Debug mode
+
+Enable <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments> inside pom.xml to enable emote debugging.
+
+### Passing Args
+
+./mvnw spring-boot:run -D"spring-boot.run.arguments"="--<environment_key>=<environment_value> ... --<environment_key>=<environment_value>"
+
 ### PWA Support
 
 JHipster ships with PWA (Progressive Web App) support, and it's turned off by default. One of the main components of a PWA is a service worker.
