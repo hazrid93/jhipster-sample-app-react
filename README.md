@@ -51,7 +51,7 @@ The `npm run` command will list all of the scripts available to run for this pro
 
 ### Debug mode
 
-Enable <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments> inside pom.xml to enable emote debugging.
+Enable <jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005</jvmArguments> inside pom.xml to enable emote debugging.
 
 ### Passing Args
 
